@@ -105,7 +105,7 @@ sudo useradd -c 'git version manage' -m -d /home/git -s bin/bash  git
 useradd -r -s /bin/sh -c 'git version control' -d /home/git git
 
 # 更改git用户的密码
-sudo passwd git
+# sudo passwd git 不需要更改密码，不使用git帐号登陆系统
 
 # su 到git用户
 su - git
