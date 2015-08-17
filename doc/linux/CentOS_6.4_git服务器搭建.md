@@ -77,6 +77,7 @@ python setup.py install
 4.在开发机上,生产密钥并上传到服务器上
 ```
 ssh-keygen -t rsa   #一路回车，不需要设置密码
+ssh-keygen.exe -t rsa -C "ice.deng@gmail.com"   # 指定hostname
 
 #上传公钥到服务器(默认SSH端口22)
 scp ~/.ssh/id_rsa.pub tailin@192.168.100.202:/tmp
