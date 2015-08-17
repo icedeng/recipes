@@ -102,6 +102,7 @@ ls /tmp/id_rsa.pub  #显示已经上传的密钥
 ```
 # 创建git版本管理用户 git
 sudo useradd -c 'git version manage' -m -d /home/git -s bin/bash  git
+useradd -r -s /bin/sh -c 'git version control' -d /home/git git
 
 # 更改git用户的密码
 sudo passwd git
